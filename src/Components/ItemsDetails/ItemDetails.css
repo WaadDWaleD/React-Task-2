@@ -1,0 +1,165 @@
+.meal-details {
+  font-family: system-ui;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #f3f4f6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.left-section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.img-details {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.more-about-meal {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+h2{
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight: 500;
+    font-size: 30px;
+    color: #f7a11a;
+
+}
+
+.youtube, .website {
+  border: none;
+  margin: 8px;
+  width: 110px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: medium;
+}
+
+
+.youtube {
+  background-color: #dc2626;
+  color: white;
+  transition: 0.3s all;
+}
+.youtube:hover {
+  background-color: #ff0000;
+}
+
+.website {
+  background-color: #21ba75;
+  color: white;
+  transition: 0.3s all;
+}
+.website:hover {
+  background-color: #49dd9b;
+}
+
+.meal-text {
+  width: 40%;
+  margin-top: 60px;
+}
+
+.meal-info {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.ingredients {
+  width: 30%;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+margin-top: 60px;
+
+}
+.ingredients h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  border-bottom: 4px solid #e5e7eb;
+  padding: 10px;
+}
+.ingredients li {
+  list-style: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 2px solid #e5e7eb;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .meal-details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-section, .meal-text, .ingredients {
+    width: 100%;
+  }
+  .left-section {
+    order: -1;
+  }
+  .meal-text {
+    text-align: center;
+  }
+}
+
+
+
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+  padding: 1rem;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ef4444; 
+  margin-bottom: 1rem;
+}
+
+.not-found p {
+  color: #4b5563; 
+  margin-bottom: 1.5rem;
+}
+
+.back-button {
+  background-color: #ef4444; 
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #dc2626; 
+}
