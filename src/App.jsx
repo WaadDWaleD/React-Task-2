@@ -15,6 +15,7 @@ function App() {
       { path: "item/:id", element:<ItemDetails></ItemDetails> },
       {path:"*" , element: <Error></Error>}
     ]
+    
     }
   ])
 
